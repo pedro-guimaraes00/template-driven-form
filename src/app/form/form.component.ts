@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Client } from '../shared/client.model'
 
+
 @Component({
   selector: 'app-form',
   templateUrl: './form.component.html',
@@ -16,6 +17,7 @@ export class FormComponent implements OnInit {
     this.cliente = new Client()
   }
 
+    
   onSubmit() {
     console.log(this.cliente)
   }
