@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Client } from '../shared/client.model'
 
 @Component({
   selector: 'app-form',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FormComponent implements OnInit {
 
+  cliente: Client
+
   constructor() { }
 
   ngOnInit(): void {
+    this.cliente = new Client()
+  }
+
+  onSubmit() {
+    console.log(this.cliente)
   }
 
 }
